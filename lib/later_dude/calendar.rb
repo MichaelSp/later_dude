@@ -82,6 +82,8 @@ module LaterDude
       options = { :class => "day" }
       options[:class] << " otherMonth" if day.month != @days.first.month
       options[:class] << " weekend" if Calendar.weekend?(day)
+      options[:class] << " saturday" if Calendar.saturday?(day)
+      options[:class] << " sunday" if Calendar.sunday?(day)
       options[:class] << " today" if day.today?
 
       # block is only called for current month or if :yield_surrounding_days is set to true
@@ -199,6 +201,14 @@ module LaterDude
     class << self
       def weekend?(day)
         [0,6].include?(day.wday) # 0 = Sunday, 6 = Saturday
+      end
+      
+      def saturday?(day)
+	day.wday == 6
+      end
+      
+      def sunday(day)
+	day.wday == 0
       end
 
       def default_calendar_options
