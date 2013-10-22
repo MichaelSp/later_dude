@@ -204,11 +204,11 @@ module LaterDude
       end
       
       def saturday?(day)
-	day.wday == 6
+	      day.wday == 6
       end
       
-      def sunday(day)
-	day.wday == 0
+      def sunday?(day)
+	      day.wday == 0
       end
 
       def default_calendar_options
