@@ -1,8 +1,8 @@
 Gem::Specification.new do |s|
   s.name = %q{later_dude}
-  s.version = "0.3.1"
+  s.version = "0.3.4"
 
-  s.authors = ["Clemens Kofler"]
+  s.authors = ["Clemens Kofler", "Michael Sprauer"]
   s.description = %q{LaterDude is a small calendar helper plugin for Rails with i18n support.}
   s.summary = %q{Small calendar helper plugin for Rails with i18n support}
   s.email = %q{clemens@railway.at}

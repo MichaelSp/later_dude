@@ -9,7 +9,7 @@ It was heavily inspired by "Jeremy Voorhis'/Geoffrey Grosenbach's calendar_helpe
 
 * LaterDude leverages the power of the "Rails i18n plugin":http://rails-i18n.org. This means that if you have Rails 2.2 or higher (or if you've installed the i18n gem and the plugin separately), you can just drop in locales and you'll get localized month and day names.
 * Where the calendar_helper had one helper method that internally called multiple other private methods, LaterDude keeps the namespace clean by tucking away all of its functionality in a presenter (of sorts).
-* Most CSS class names are given implictly, e.g. "day", "weekendDay" (both are given to the displayed month as well as to the previous and following month), "otherMonth" (all days that don't belong to the displayed month) and "today". The only CSS class that can be configured is the table's class (which defaults to "calendar"). Further customization can be taken care of by passing a block (see examples).
+* Most CSS class names are given implictly, e.g. "day", "weekend", "saturday" (both are given to the displayed month as well as to the previous and following month), "otherMonth" (all days that don't belong to the displayed month) and "today". The only CSS class that can be configured is the table's class (which defaults to "calendar"). Further customization can be taken care of by passing a block (see examples).
 
 Installation
 ============
